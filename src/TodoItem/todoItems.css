@@ -1,35 +1,44 @@
-span.palomita{
-    color: green;
+.check{
     font-weight: bolder;
+}
+
+.Icon-check-dvg{
+    fill: rgb(0, 114, 0);
+    width: 20px;
     margin: 12px;
 }
-span.palomita-complete{
-    color: grey;
-    font-weight: bolder;
+
+.Icon-delete-dvg{
+    background-color: white;
+    border-radius: 50%;
+    width: 22px;
+}
+
+.check-complete{
+    fill: grey;
     margin: 12px;
 }
-span.palomita:hover{
-    text-shadow: 1px 1px 10px rgb(196, 193, 0);
+span.check:hover .Icon-check-dvg{
     cursor: pointer;
+    fill: rgb(180, 176, 176);
     font-size: 1.5em;
 }
-button.x{
+span.delete{
     position: absolute;
     top: -20px;
     right: -20px;
-    color: red;
     font-weight: bolder;
     border-radius: 50%;
-    font-size: 1em;
     margin: 12px;
+    width: 20px;
+    fill: grey;
 
 }
-button.x:hover{
-    text-shadow: 1px 1px 10px rgb(196, 111, 0);
-    background-color: black;
+span.delete:hover .Icon-delete-dvg{
+    fill: rgb(197, 0, 0);
     cursor: pointer;
-    color:antiquewhite;
-    font-size: 0.8em;
+    width: 21px;
+    background-color: rgb(230, 223, 223);
 }
 span.text{
     font-family: Georgia, 'Times New Roman', Times, serif;

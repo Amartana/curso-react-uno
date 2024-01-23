@@ -10,7 +10,7 @@ function CreateTodo({setNewTodo, crearNewTodo, newTodo}){
         placeholder="Algo nuevo y super interesante"
         onChange={(event)=>{
             setNewTodo(event.target.value)
-            console.log(event.target.value)
+            // console.log(event.target.value)
         }}
         />
         <button 

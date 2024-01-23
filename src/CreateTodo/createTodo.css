@@ -22,3 +22,8 @@ button.create{
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
 }
+
+.create:hover{
+    cursor: pointer;
+    background-color: rgb(124, 150, 167);
+}
