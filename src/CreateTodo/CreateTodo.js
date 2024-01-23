@@ -15,7 +15,11 @@ function CreateTodo({setNewTodo, crearNewTodo, newTodo}){
         />
         <button 
         className="create" 
-        onClick={crearNewTodo}
+        onClick={
+            ()=> {
+                newTodo.length > 0 && crearNewTodo()
+            }
+        }
         > Add Task </button>
         </div>
     )

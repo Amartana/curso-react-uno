@@ -5,8 +5,11 @@ import { TodoSearch } from '../TodoSearch/TodoSearch';
 import { TodoList } from '../TodoList/TodoList';
 import { CreateTodo } from '../CreateTodo/CreateTodo';
 import { TodoItem } from '../TodoItem/TodoItem';
+import { CgSandClock } from "react-icons/cg";
 
 function AppUI({
+    loading,
+    error,
     totalTodos, 
     completeTodos,
     searchTodos,
@@ -37,6 +40,10 @@ function AppUI({
       />
       <main>
         <TodoList>
+        {/* TODO ESTO SERIA CONDICIONAL: */}
+          {loading && <p><em> <CgSandClock color='grey' size={20}/> Estamos cargando tus TASKs... </em> </p>}
+          {error && <p>Ups! Algo salio mal...</p>}
+          {(!loading && searchTodos.lenght === 0) && <p> Crea tu primer TASK!! </p>}
           {searchTodos.map((todo, index) => (
             <TodoItem 
             key={index}    

@@ -41,7 +41,12 @@ function App() {
 //-----------------------------------------------------------------------------------------------------
 
    //USO EL CUSTOM HOOK: 
-  const [todos, saveTodos] = useLocalStorageCH('TODOS', [])
+  const {
+    item: todos,
+    saveItems: saveTodos,
+    loading,
+    error,
+  } = useLocalStorageCH('TODOS', [])
 /* use el desestructurador para asignar a las variables todos y saveTodos, los elementos retornados por el custom hook */
 
   //STATE DEL SEARCH:
@@ -84,6 +89,8 @@ tambien establever el value del input como el estado actual. */}
   
   return (
     < AppUI 
+    loading={loading}
+    error={error}
     totalTodos={totalTodos}
     completeTodos={completeTodos}
     searchTodos={searchTodos}
