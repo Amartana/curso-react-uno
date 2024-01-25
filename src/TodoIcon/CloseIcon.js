@@ -1,9 +1,9 @@
 import React from "react";
 import { TodoIcon } from './TodoIcon'
 
-function CloseIcon({modalOpenClose}) {
+function CloseIcon({ modalOpenClose }) {
     return (
-        <TodoIcon 
+        <TodoIcon
             type="close"
             onClick={modalOpenClose}
         />

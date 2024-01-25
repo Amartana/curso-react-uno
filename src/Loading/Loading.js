@@ -13,5 +13,4 @@ function Loading() {
     )
 }
 
-
 export { Loading };
