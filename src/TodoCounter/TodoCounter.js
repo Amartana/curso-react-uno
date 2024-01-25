@@ -1,11 +1,18 @@
+import React from 'react'
 import './todoCounter.css'
+import { CgSandClock } from "react-icons/cg";
+import { TodoContext } from '../TodoContext/TodoContext'
 
-function TodoCounter({total, completed}){
+function TodoCounter(){
+
+    const {totalTodos: total, completeTodos: completed, loading}  = React.useContext(TodoContext)
 
     let msj = ''
-
-    if (total === 0) {
-      msj = 'No tienes TASKs perndientes. Agenda una TASK para comenzar.'
+    
+    if(loading){
+      msj = <p className='h2'>Cargando... <CgSandClock color='grey' size={20}/></p>
+    } else if (total === 0) {
+      msj = 'No tienes TASKs pendientes. Add TASK para comenzar.'
     } else if (total === completed) {
       msj = 'Bien hecho, ¡¡Haz completado todas tus TASKs!!'
     } else {

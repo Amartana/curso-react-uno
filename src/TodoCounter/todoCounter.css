@@ -6,3 +6,8 @@ h2{
 span.contador-num{
     font-weight: 800;
 }
+p.h2{
+    color: rgb(128, 128, 128);
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 0;
+}

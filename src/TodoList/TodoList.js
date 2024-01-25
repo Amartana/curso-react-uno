@@ -1,6 +1,6 @@
 import './todoList.css'
 
-function TodoList({children}){
+function TodoList({ children }){
     return(
       <ul> 
         {/* Con esto podemos despues agregar los li de la ul.

@@ -1,0 +1,38 @@
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    max-height: 70vh;
+    overflow: scroll;
+    padding: 10px;
+}
+
+p::-webkit-scrollbar {
+    width: 8px;
+    height: 0;
+}
+
+p::-webkit-scrollbar-thumb {
+    background: rgb(64, 66, 88);
+    border-radius: 50px;
+}
+
+.close{
+    background-color: white;
+    border-radius: 50%;
+    width: 22px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-weight: bolder;
+    border-radius: 50%;
+    margin: 12px;
+    width: 20px;
+    fill: grey;
+}
+
+span.close:hover{
+    fill:rgb(64, 66, 88);
+    cursor: pointer;
+    width: 21px;
+    background-color: rgb(230, 223, 223);
+}

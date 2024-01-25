@@ -14,16 +14,73 @@
     box-shadow: 1px 1px 5px rgb(189, 189, 189);
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow: scroll;
+    resize: none; /*Para que los usuarios no puedan redimensionar el tamanio del textarea*/
+}
+button.create-mobile{
+    display: none;
 }
 
-button.create{
+.input-agregar::-webkit-scrollbar {
+    width: 8px;
+    height: 0;
+}
+
+.input-agregar::-webkit-scrollbar-thumb {
+    background: rgb(64, 66, 88);
+    border-radius: 50px;
+}
+
+textarea{
+   height: 150px;
+   font-size: 1em;
+   padding: 30px 8px 20px 8px;
+   box-sizing: border-box;
+}
+
+button.create,
+button.create-mobile{
     height: 40px;
     width: 104px;
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
 }
 
-.create:hover{
+.create:hover,
+.create-mobile:hover{
     cursor: pointer;
-    background-color: rgb(124, 150, 167);
+    background-color: rgb(178, 205, 255);
+}
+
+@media (max-width: 600px) {
+    .container{
+        order: -1;
+        width: 70%;
+        flex-direction: row;
+    }
+    textarea{
+        padding: 15px 5px 7px 5px;
+        height: 50px;
+        font-size: .8em;
+     }
+    .input-agregar{
+        min-height: 50px;
+        max-height: 50px;
+        margin: 10px;
+        margin-right: 3px ;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    button.create{
+        display: none;
+    }
+
+    button.create-mobile{
+        display: block;
+        height: 50px;
+        width: 60px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 0px;
+    }
 }

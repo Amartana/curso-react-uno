@@ -1,11 +1,16 @@
 import React from "react";
 import "./todoSearch.css"
+import { TodoContext } from "../TodoContext/TodoContext";
 
-function TodoSearch(prop){
+function TodoSearch(){
   {/*  const [] se usa para desestructurar arrays */}
-
+    const prop = React.useContext(TodoContext) 
     return(
-      <form className='search'>
+      <form className='search'
+        onSubmit={(event)=>{
+          event.preventDefault();
+          prop.setSearchValue('')}}
+      >
         <input 
         placeholder="Aprender react"
         value={prop.searchValue}

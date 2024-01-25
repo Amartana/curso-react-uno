@@ -29,7 +29,7 @@ function useLocalStorageCH(itemName, valorInicial) {
         }
   
         setLoading(false)
-        }, 2000);
+        }, 1500);
       }
       catch(error) {
         setLoading(false)

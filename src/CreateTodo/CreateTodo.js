@@ -2,8 +2,10 @@ import "./createTodo.css"
 
 function CreateTodo({setNewTodo, crearNewTodo, newTodo}){
     return (
+
+        //MUY MAL!! ME FALTO EL LABEL!!!
         <div className="container">
-        <input 
+        <textarea 
         className="input-agregar" 
         type="text" 
         value={newTodo}
@@ -13,6 +15,14 @@ function CreateTodo({setNewTodo, crearNewTodo, newTodo}){
             // console.log(event.target.value)
         }}
         />
+        <button 
+        className="create-mobile" 
+        onClick={
+            ()=> {
+                newTodo.length > 0 && crearNewTodo()
+            }
+        }
+        > ➕ </button>
         <button 
         className="create" 
         onClick={
