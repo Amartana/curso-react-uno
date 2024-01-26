@@ -6,7 +6,7 @@
     min-width: 200px;
 }
 .input-agregar{
-    min-height: 150px;
+    height: 150px;
     width: 100%;
     margin: 30px 0 30px 0;
     border: 1px solid rgb(189, 189, 189);
@@ -44,6 +44,11 @@ button.create-mobile{
     width: 104px;
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
+    height: 32px;
+    border: 1px solid gray;
+    border-color: buttonborder;
+    border-width: 2px;
+    border-style: outset;
 }
 
 .create:hover,
@@ -52,24 +57,24 @@ button.create-mobile{
     background-color: rgb(178, 205, 255);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 740px) {
     .container{
         order: -1;
         width: 70%;
-        flex-direction: row;
     }
     textarea{
         padding: 15px 5px 7px 5px;
-        height: 50px;
         font-size: .8em;
      }
     .input-agregar{
-        min-height: 50px;
-        max-height: 50px;
-        margin: 10px;
-        margin-right: 3px ;
+        height: 80px;
+        margin: 3px;
         border-bottom-right-radius: 0px;
-        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+
+    }
+    .input-agregar::-webkit-scrollbar {
+        width: 0px;
     }
     button.create{
         display: none;
@@ -77,10 +82,11 @@ button.create-mobile{
 
     button.create-mobile{
         display: block;
-        height: 50px;
-        width: 60px;
+        height: 30px;
+        width: 100%;
         border-bottom-right-radius: 10px;
-        border-top-right-radius: 10px;
         border-top-left-radius: 0px;
+        border-bottom-left-radius:10px;
+        box-shadow: 1px 1px 5px rgb(189, 189, 189);
     }
 }

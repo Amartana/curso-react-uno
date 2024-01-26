@@ -39,15 +39,21 @@ function TodoContextProvider({ children }) {
     setNewTodo('')
   }
 
-  function completeTodo(index) {
+  function completeTodo(text) {
     const newArrayTodos = [...todos]
-    newArrayTodos[index].completed !== true ? newArrayTodos[index].completed = true : newArrayTodos[index].completed = false
+    const i = newArrayTodos.findIndex((todo)=>
+      todo.text === text
+    )
+    newArrayTodos[i].completed !== true ? newArrayTodos[i].completed = true : newArrayTodos[i].completed = false
     saveTodos(newArrayTodos)
   }
 
-  function deleteTodo(index) {
+  function deleteTodo(text) {
     const newArrayTodos = [...todos]
-    newArrayTodos.splice(index, 1)
+    const i = newArrayTodos.findIndex((todo)=>
+      todo.text === text
+    )
+    newArrayTodos.splice(i, 1)
     saveTodos(newArrayTodos)
   }
 

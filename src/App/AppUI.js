@@ -48,14 +48,14 @@ function AppUI() {
                         }
                         {error && <Errors />}
                         {(!loading && searchTodos.length === 0) && <CreaTuPrimerTodo />}
-                        {searchTodos.map((todo, index) => (
+                        {searchTodos.map((todo) => (
                             <TodoItem
-                                key={index}
+                                key={todo.text}
                                 text={todo.text}
                                 completed={todo.completed}
-                                completeTodo={() => completeTodo(index)}
-                                deleteTodo={() => deleteTodo(index)}
-                                modalOpenClose={() => modalOpenClose(index)}
+                                completeTodo={() => completeTodo(todo.text)}
+                                deleteTodo={() => deleteTodo(todo.text)}
+                                modalOpenClose={() => modalOpenClose(todo.text)}
                             />
                         ))}
                     </TodoList>

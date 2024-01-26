@@ -9,7 +9,7 @@ function CreateTodo({setNewTodo, crearNewTodo, newTodo}){
         className="input-agregar" 
         type="text" 
         value={newTodo}
-        placeholder="Algo nuevo y super interesante"
+        placeholder="Haz algo nuevo y super interesante"
         onChange={(event)=>{
             setNewTodo(event.target.value)
         }}

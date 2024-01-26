@@ -1,12 +1,12 @@
 ul{
     list-style: none;
-    padding: 20px;
-    padding-top: 0px;
-    width: 50%;
+    width: 45%;
     min-width: 300px;
     text-align: center;
     max-height: 60vh;
     overflow: scroll;
+    margin-right: 20px;
+    padding: 0;
 }
 
 ul::-webkit-scrollbar {
@@ -20,11 +20,12 @@ ul::-webkit-scrollbar-thumb {
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 740px) {
     ul{
       width: 80%;
       overflow: hidden;
       max-height: none;
+      margin: 16px 0 0 0;
     }
   }
 

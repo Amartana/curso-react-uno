@@ -1,4 +1,4 @@
-.ingreso-busqueda{
+.ingreso-busqueda {
     height: 32px;
     border: 1px solid gray;
     border-top-left-radius: 10px;
@@ -6,15 +6,23 @@
     margin: 1px;
     width: 60%;
     padding-left: 12px;
+    box-sizing: border-box;
 }
-.boton-busqueda{
+
+.boton-busqueda {
+    height: 32px;
+    border: 1px solid gray;
     padding: 5px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     margin: 1px;
     cursor: pointer;
+    border-color: buttonborder;
+    border-width: 2px;
+    border-style: outset;
 }
-form.search{
+
+form.search {
     margin: 20px;
     display: flex;
     justify-content: center;

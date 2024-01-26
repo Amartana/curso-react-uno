@@ -15,18 +15,18 @@ img{
     width: 100%;
 }
 .crea{
-    color: rgb(255, 144, 143);
+    color: rgb(90, 72, 72);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
-    text-shadow: 1px 1px 0px rgb(236, 87, 204);
+    text-shadow: 1px 1px 1px rgba(236, 87, 204, 0.651);
     position: absolute;
     right: 15px;
     background-color: rgba(56, 90, 100, 0.274);
     padding: 10px;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    border: 2px solid rgb(27, 46, 53);
+    border: 2px solid rgb(62, 101, 116);
     box-shadow: 2px 2px 2px rgba(27, 46, 53, 0.651);
     text-align: center;
     display: flex;
@@ -34,19 +34,24 @@ img{
     z-index:2;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 740px) {
     .creative{
       width: 100%;
       flex-direction: column;
       align-items: center;
+      
     }
 
     img{
         margin-top: 2px;
     }
+    .crea{
+        width: 80px;
+        height: 80px;
+    }
   }
 
-  @media (max-width: 690px) {
+  @media (max-width: 860px) {
     .crea{
         right: 50px;
     }

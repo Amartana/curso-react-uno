@@ -19,7 +19,7 @@ function TodoSearch() {
         }}
         className="ingreso-busqueda"
       />
-      <input type="submit" value="New search 🔍"
+      <input translate="no" type="submit" value="New search 🔍"
         className="boton-busqueda"
       />
     </form>

@@ -2,6 +2,7 @@ h2{
     text-align: center;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
+    height: 36px;
 }
 span.contador-num{
     font-weight: 800;
@@ -10,4 +11,12 @@ p.h2{
     color: rgb(128, 128, 128);
     font-family: 'Nunito Sans', sans-serif;
     padding: 0;
+}
+
+span.h3{
+    display: inline-block;
+    font-size: 0.75em;
+    line-height: 1; 
+    height: 36px;
+    margin: 0 12px;
 }

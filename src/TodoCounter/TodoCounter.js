@@ -11,10 +11,15 @@ function TodoCounter() {
 
   if (loading) {
     msj = <p className='h2'>Cargando... <CgSandClock color='grey' size={20} /></p>
+
   } else if (total === 0) {
-    msj = 'No tienes TASKs pendientes. Add TASK para comenzar.'
+    msj =
+     <span className="h3" >No tienes TASKs pendientes. Add TASK para comenzar</span>
+
   } else if (total === completed) {
-    msj = 'Bien hecho, ¡¡Haz completado todas tus TASKs!!'
+       msj =
+     <span className="h3">Bien hecho, ¡¡Haz completado todas tus TASKs!!</span>
+
   } else {
     msj = <>
       Has completado {<span className="contador-num">{completed}</span>}  / {<span className="contador-num">{total}</span>} TASKs
