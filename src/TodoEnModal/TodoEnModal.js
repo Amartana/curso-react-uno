@@ -5,6 +5,7 @@ import { CloseIcon } from "../TodoIcon/CloseIcon";
 
 function TodoEnModal() {
     const { todoModal, modalOpenClose } = useContext(TodoContext)
+    console.log(todoModal)
     return (
         <>
             <p> {todoModal.text}</p>
@@ -14,6 +15,6 @@ function TodoEnModal() {
                 /> </span>
         </>
     )
-}
+} 
 
 export { TodoEnModal }

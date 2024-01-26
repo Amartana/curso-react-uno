@@ -43,7 +43,7 @@ img{
     }
 
     img{
-        margin-top: 2px;
+        margin-top: 30px;
     }
     .crea{
         width: 80px;
@@ -53,6 +53,7 @@ img{
 
   @media (max-width: 860px) {
     .crea{
+        top:35px;
         right: 50px;
     }
     

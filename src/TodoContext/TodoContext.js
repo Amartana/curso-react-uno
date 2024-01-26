@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useDeferredValue } from "react";
 import { useLocalStorageCH } from "./useLocalStorageCH";
 
 
@@ -57,9 +57,10 @@ function TodoContextProvider({ children }) {
     saveTodos(newArrayTodos)
   }
 
-  function modalOpenClose(index) {
+  function modalOpenClose(text) {
+    const i = todos.findIndex((todo) => todo.text === text)
     setModal(!modal)
-    setTodoModal(todos[index])
+    setTodoModal(todos[i])
   }
 
   return (

@@ -48,7 +48,7 @@ function AppUI() {
                         }
                         {error && <Errors />}
                         {(!loading && searchTodos.length === 0) && <CreaTuPrimerTodo />}
-                        {searchTodos.map((todo) => (
+                        {searchTodos.map((todo,index) => (
                             <TodoItem
                                 key={todo.text}
                                 text={todo.text}
