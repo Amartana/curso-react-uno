@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/curso-react-uno/static/css/main.f838d3df.css",
+    "main.css": "/curso-react-uno/static/css/main.bcdabae0.css",
     "main.js": "/curso-react-uno/static/js/main.53f1e679.js",
     "index.html": "/curso-react-uno/index.html",
     "static/media/delete.svg": "/curso-react-uno/static/media/delete.c30a1a5d28415a0d93968ee5677e5d98.svg",
     "static/media/close.svg": "/curso-react-uno/static/media/close.0212542a30759ffc8644bf0eb2d62647.svg",
     "static/media/check.svg": "/curso-react-uno/static/media/check.b8d6f00a25625c8adf83adc43101af8f.svg",
-    "main.f838d3df.css.map": "/curso-react-uno/static/css/main.f838d3df.css.map",
+    "main.bcdabae0.css.map": "/curso-react-uno/static/css/main.bcdabae0.css.map",
     "main.53f1e679.js.map": "/curso-react-uno/static/js/main.53f1e679.js.map"
   },
   "entrypoints": [
-    "static/css/main.f838d3df.css",
+    "static/css/main.bcdabae0.css",
     "static/js/main.53f1e679.js"
   ]
 }
